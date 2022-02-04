@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <RootNamespace>EasyADC</RootNamespace>
+    <AssemblyName>EasyADC</AssemblyName>
+  </PropertyGroup>
+
+  <!-- Nuget package info -->
+  <PropertyGroup>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Product>EasyADC</Product>
+    <Version>0.1.0</Version>
+    <PackageVersion>$(Version)-beta1</PackageVersion>
+    <Title>EasyADC</Title>
+    <Description>Easy Wrapper for Autodesk DesktopConnector API</Description>
+    <Authors>Ehsan Iran-Nejad</Authors>
+    <Copyright>Copyright (c) 2022 Ehsan Iran-Nejad</Copyright>
+    <PackageIcon>icon.png</PackageIcon>
+    <RepositoryUrl>https://github.com/eirannejad/EasyADC.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>autodesk revit bim360</PackageTags>
+    <PackageProjectUrl>https://github.com/eirannejad/EasyADC</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReleaseNotes>https://github.com/eirannejad/EasyADC/blob/main/CHANGELOG.md</PackageReleaseNotes>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <!-- Nuget resources -->
+  <ItemGroup>
+    <None Include="$(SourceDir)..\art\icon.png" Pack="true" PackagePath="" />
+    <None Include="$(SourceDir)..\README.md" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="$(ADCInstallPath)Autodesk.DesktopConnector.API.dll" Private="False" Version="7.2.0" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+  </ItemGroup>
+</Project>
