@@ -3,6 +3,8 @@
     <OutputType>Library</OutputType>
     <RootNamespace>EasyADC</RootNamespace>
     <AssemblyName>EasyADC</AssemblyName>
+    <!-- This is critical for this module to work -->
+    <Optimize>False</Optimize>
   </PropertyGroup>
 
   <!-- Nuget package info -->
@@ -10,7 +12,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Product>EasyADC</Product>
     <Version>0.1.0</Version>
-    <PackageVersion>$(Version)-beta2</PackageVersion>
+    <PackageVersion>$(Version)-beta3</PackageVersion>
     <Title>EasyADC</Title>
     <Description>Easy Wrapper for Autodesk DesktopConnector API</Description>
     <Authors>Ehsan Iran-Nejad</Authors>
