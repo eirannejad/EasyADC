@@ -10,7 +10,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Product>EasyADC</Product>
     <Version>0.1.0</Version>
-    <PackageVersion>$(Version)-beta1</PackageVersion>
+    <PackageVersion>$(Version)-beta2</PackageVersion>
     <Title>EasyADC</Title>
     <Description>Easy Wrapper for Autodesk DesktopConnector API</Description>
     <Authors>Ehsan Iran-Nejad</Authors>
