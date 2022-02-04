@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <PropertyGroup>
-        <RhinoPluginDir>$(MSBuildThisFileDirectory)..\..\</RhinoPluginDir>
-        <ADCInstallPath>C:\Program Files\Autodesk\Desktop Connector\</ADCInstallPath>
-    </PropertyGroup>
+  <PropertyGroup>
+    <RhinoPluginDir>$(MSBuildThisFileDirectory)..\..\</RhinoPluginDir>
+    <ADCInstallPath>C:\Program Files\Autodesk\Desktop Connector\</ADCInstallPath>
+  </PropertyGroup>
 
-    <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
-        <Platforms>x64</Platforms>
-         <LangVersion>10.0</LangVersion> 
-        <AppendTargetFrameworkToOutputPath>False</AppendTargetFrameworkToOutputPath>
-        <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
-    </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>10.0</LangVersion>
+    <AppendTargetFrameworkToOutputPath>False</AppendTargetFrameworkToOutputPath>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
 
-    <PropertyGroup Condition="'$(Configuration)'=='Release'">
-        <DefineConstants>$(DefineConstants);RELEASE</DefineConstants>
-    </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <DefineConstants>$(DefineConstants);RELEASE</DefineConstants>
+  </PropertyGroup>
 
-    <PropertyGroup Condition="'$(Configuration)'=='Debug'">
-        <DefineConstants>$(DefineConstants);TRACE;DEBUG</DefineConstants>
-    </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+    <DefineConstants>$(DefineConstants);TRACE;DEBUG</DefineConstants>
+  </PropertyGroup>
 
-    <PropertyGroup>
-        <DefaultItemExcludes>$(DefaultItemExcludes);.DS_Store</DefaultItemExcludes>
-    </PropertyGroup>
+  <PropertyGroup>
+    <DefaultItemExcludes>$(DefaultItemExcludes);.DS_Store</DefaultItemExcludes>
+  </PropertyGroup>
 </Project>
