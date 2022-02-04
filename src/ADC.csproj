@@ -3,6 +3,8 @@
     <OutputType>Library</OutputType>
     <RootNamespace>EasyADC</RootNamespace>
     <AssemblyName>EasyADC</AssemblyName>
+    <!-- This is critical for this module to work -->
+    <Optimize>False</Optimize>
   </PropertyGroup>
 
   <!-- Nuget package info -->
